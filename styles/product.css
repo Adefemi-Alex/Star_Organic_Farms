@@ -1,0 +1,45 @@
+.each-showcase{
+    position: relative;
+    transition: all 0.5s ease;
+}
+.each-showcase:hover .bi{
+    display: block;
+    
+}
+
+/* .custom {
+    width: 100%;
+    padding: 1rem 0 1rem;
+} 
+.custom img{
+    max-width: 100%;
+} */
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    bottom: 37%;
+    left: 0;
+}
+.bi{
+    background-color: var(--main);
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+    transition: all 0.5 ease;
+    
+}
+.bi:hover{
+    box-shadow: 0px 0px 7px 3px black;
+}
+.each-showcase .show-hover{
+    padding-top: 0;
+}

@@ -1,0 +1,165 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: red;
+}
+
+.bi-plus-lg {
+  color:  #18a15c;
+}
+
+/**
+* ! style rules for label and some buttons
+**/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+.removeAll {
+  background-color: red;
+}
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+.products-container{
+  
+  padding-bottom: 100px;
+  max-width: 920px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.products-container ion-icon{
+  font-size: 25px;
+  color: #18a15c;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.product-header{
+   width: 100%;
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey; 
+   margin: 0 auto; 
+}
+
+  .product-title{
+  width: 45%;
+}
+
+.price{
+  width: 15%;
+  /* border-bottom: 1px solid lightgrey; */
+  display: flex; 
+  align-items: center;
+}
+.quantity{
+  width: 30%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+} 
+.total{
+  width: 10%;
+  /* border-bottom: 1px solid lightgrey; */
+  display: flex;
+  align-items: center;
+}
+
+.contain{
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+.product{
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 2px;
+  /* margin-left: 5rem;*/
+  /* margin: 0 7rem; */
+} 
+
+@media screen and (280px <= width <= 539px){
+  .product-header{
+    display: none;
+  }
+  #label{
+    margin-top:4rem;
+  }
+  .contain{
+    flex-direction: column;
+  }
+  .product{
+    width: 90%;
+    
+  }
+}
+@media screen and (540px <= width <= 737px){
+  .product-header, #label{
+    margin-top:6rem;
+    
+  }
+  #label{
+    margin-top:4rem;
+  }
+  /* .contain{
+    flex-direction: column;
+  }
+  .product{
+    width: 90%;
+    
+  } */
+}
+

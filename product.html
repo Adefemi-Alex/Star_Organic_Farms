@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=EB+Garamond&family=Ibarra+Real+Nova&family=Jost&family=Playfair+Display+SC:ital@1&family=Rampart+One&family=Righteous&family=Slabo+27px&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap-grid.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="product.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Product</title>
+</head>
+<body>
+    <div class="everything">
+        <!-- Navigation Bar -->
+        <section class="nav">
+            <div class="nav-head">  
+                <div class="brand">
+                    <img class="barr" src="images/index/logo.png" alt="logo" width="100" height="100">
+                    <h2 style="font-family: 'Courgette', cursive;">Star Organic Farms</h2>
+                </div>
+                <nav class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="query.html">Query</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul> 
+                </nav>
+                <div class="cart">
+                    <a href="cart.html">
+                        <img src="images/home/cart.png" alt="cart">
+                        <div id="cart-count" class="cart-count">0</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main">
+            <img src="images/product/product_img.webp" alt="main image">
+            <div class="main-content mt-2">
+                <h3 style="color: white;">Welcome to the products page</h3>
+                <div class="main-sub">
+                    <h3 class="active" style="color: white;">LIVE TO SHOP<br>SHOP TO LIVE</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase">
+            <div class="showcase-head">
+                <div class="showcase-heading">
+                    <h3 class="best">PRODUCTS</h3> 
+                </div>
+                <p>Seek And You Shall Find Any Product</p>
+            </div>
+            <div class="shop showcase-products container pt-2">
+                <div class="row" id="shop"> 
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+        
+        <div class="can">
+            <a href="#" id="top-btn">&#8593;</a>
+        </div>
+
+        <footer class="mt-5 py-5">
+            <div class="row container mx-auto pt-5">
+                <div class="footer-one col-lg-3 col-md-4 col-12">
+                    <img src="images/home/logo.png" alt="Star Organic Farms" width="60" height="50">
+                    <span style="color: white;">Star Organic Farms</span>
+                    <p>At Star Organic Farm, we are committed to providing the freshest and healthiest produce while nurturing the planet and promoting sustainable agriculture.</p>
+                </div>
+                <div class="footer-one col-lg-4 col-md-4 col-12 mb-3 ml-4">
+                    <h5 class="pb-2">Products</h5>
+                    <ul class="text-uppercase list-unstyled">
+                        <li><a href="#">Organic Cereals</a></li>
+                        <li><a href="#">Pulses</a></li>
+                        <li><a href="#">Spices and Condiments</a></li>
+                        <li><a href="#">Cooking Oils</a></li>
+                        <li><a href="#">Fruit Pulps</a></li>
+                        <li><a href="#">Agro Products</a></li>
+                        <li><a href="#">Wheat and Wheat Flours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-one col-lg-4 col-md-4 col-12 mb-3">
+                    <h5 class="pb-2">Contact Us</h5>
+                    <div>
+                        <h6 class="text-uppercase">Address</h6>
+                        <p>2, 4 Alagbole Rd, Ojodu 112107, Ogun State</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Phone</h6>
+                        <p>+234 902 526 5429</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Email</h6>
+                        <p><a href="mailto:starorganics@gmail.com" class="mail-link" style="color:#999">starorganics@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright mt-5">
+                <div class="row container mx-auto">
+                    <div class="col-md-6 col-12 text-nowrap mb-2">
+                        <p>All rights reserved @ 2023. Star Organics</p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/Data.js"></script>
+    <script>
+        var bar = document.querySelector('.barr');
+        var sideNav = document.querySelector('.side-nav');
+        bar.addEventListener('click', () => {
+            sideNav.style.width = "100%";
+            sideNav.style.transition = "0.5s ease";
+        });
+
+        var exit = document.querySelector('.side-nav h1');
+        exit.addEventListener('click', () => {
+            sideNav.style.width = "0";
+            sideNav.style.transition = "0.5s ease";
+        });
+
+        window.onscroll = function() { scrollFunc(); };
+
+        function scrollFunc() {
+            var nav = document.querySelector('.nav');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                nav.style.backgroundColor = 'white';
+                nav.style.zIndex = '1000';
+            } else {
+                nav.style.backgroundColor = 'transparent';
+            }
+
+            let topButton = document.getElementById("top-btn");
+            if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
