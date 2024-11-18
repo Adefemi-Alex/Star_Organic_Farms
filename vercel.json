@@ -1,0 +1,47 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "query.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "product.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "contact.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "gallery.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "cart.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "styles/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "images/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "scripts/*",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "$1"
+      }
+    ]
+  }
